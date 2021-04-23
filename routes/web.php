@@ -29,3 +29,8 @@ Route::delete('/pizzas/{id}', 'PizzaController@destroy')->middleware('auth');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+// Comments Resource Routes
+Route::get('/', 'CommentController@index');
+Route::get('comments/create', 'CommentController@create');
+Route::post('/comments', 'CommentController@store');
