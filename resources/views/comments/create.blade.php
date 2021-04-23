@@ -19,7 +19,7 @@
             <option value="alright">Meh, they aiight!</option>
         </select>
         <br/>
-        <input type="submit" value="Leave Comment!">
+        <input type="submit" value="Leave Review!">
     </form>
 </div>
 @endsection

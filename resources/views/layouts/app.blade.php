@@ -18,7 +18,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link rel="stylesheet" href={{ secure_asset("css/main.css") }}>
+    <link rel="stylesheet" href={{ asset("css/main.css") }}>
 </head>
 <body>
     <div id="app">
@@ -80,5 +80,8 @@
             @yield('content')
         </main>
     </div>
+    <footer>
+        Developer - Kelly Chin | <a href="https://kellyjchin.netlify.app/" target="__blank">My Portfolio!</a>
+    </footer>
 </body>
 </html>

@@ -6,26 +6,25 @@
         <div class="container">
             <div class="row">
                 <div class="col-9">
-                    <img src="img/pizzahouse.png" alt="pizza house logo" srcset="">
+                    <img src="img/pizzahouse.jpg" alt="pizza house logo" srcset="">
                     <div class="title m-b-md">
                         Derpy Pizzas
-                    </div>
-
-                    <div class="order-button">
-                        <a href="/pizzas/create" style="font-size: 30px">Order a Pizza!</a> 
-                        <br>
-                        <a href="/comments/create" style="font-size: 30px">Leave a Review!</a>
                     </div>
                     <div class="order-status">
                         <p class="message">{{ session('message') }}</p>
                     </div>
+                    <div>
+                        <a href="/pizzas/create" style="font-size: 30px; margin-right:10px" class="btn btn-success">Order a Pizza!</a> 
+                        <a href="/comments/create" style="font-size: 30px" class="btn btn-primary">Leave a Review!</a>
+                    </div>
+
                 </div>
 
                 <div class="col-3 comments-section">
-                    <h1>Customer Comments</h1>
+                    <h1>Customer Reviews</h1>
                     {{-- TODO: FOREACH OUT COMMENTS --}}
                     @foreach ( $comments as $comment)
-                    <div class="comment border border-dark" style="padding: 10px 10px 10px 10px; margin-bottom: 10px">
+                    <div class="comment border border-dark" style="padding: 10px 10px 10px 10px; margin-bottom: 5px">
                         <h3 style="border-bottom: 5px solid #5e2195 ">{{ $comment->name }}</h3>
                         <p>{{ $comment->comment_description }}</p>
                         @if ($comment->rating == "alright")
@@ -37,7 +36,7 @@
                         @if ($comment->rating == "hated")
                             <p>Hated it!</p>
                         @endif
-                        <span>{{ $comment->created_at }}</span>
+                       
                     </div>
                     @endforeach
                 </div>

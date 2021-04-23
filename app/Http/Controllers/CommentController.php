@@ -42,7 +42,7 @@ class CommentController extends Controller
         $newComment->rating = request('rating');
 
         $newComment->save();
-        return redirect('/')->with('message', 'Thanks for the comment!');
+        return redirect('/')->with('message', 'Thanks for the review!');
     }
 
     /**

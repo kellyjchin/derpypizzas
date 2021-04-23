@@ -138,3 +138,7 @@ a.back {
   color: #777;
   text-decoration: none !important;
 }
+
+.comment:hover{
+  box-shadow: 5px 5px 5px #5e2195;
+}
