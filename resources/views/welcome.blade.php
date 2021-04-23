@@ -6,7 +6,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-9">
+                    
                     <img src="img/pizzahouse.jpg" alt="pizza house logo" srcset="">
+                    
                     <div class="title m-b-md">
                         Derpy Pizzas
                     </div>
@@ -17,12 +19,12 @@
                         <a href="/pizzas/create" style="font-size: 30px; margin-right:10px" class="btn btn-success">Order a Pizza!</a> 
                         <a href="/comments/create" style="font-size: 30px" class="btn btn-primary">Leave a Review!</a>
                     </div>
-
+                    <br/>
+                    <p>**Register/Login to see all pending orders that customers have made!**</p>
                 </div>
 
                 <div class="col-3 comments-section">
                     <h1>Customer Reviews</h1>
-                    {{-- TODO: FOREACH OUT COMMENTS --}}
                     @foreach ( $comments as $comment)
                     <div class="comment border border-dark" style="padding: 10px 10px 10px 10px; margin-bottom: 5px">
                         <h3 style="border-bottom: 5px solid #5e2195 ">{{ $comment->name }}</h3>
