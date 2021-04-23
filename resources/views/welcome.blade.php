@@ -14,7 +14,7 @@
                     <div class="order-button">
                         <a href="/pizzas/create" style="font-size: 30px">Order a Pizza!</a> 
                         <br>
-                        <a href="/comments/create" style="font-size: 30px">Leave a Comment!</a>
+                        <a href="/comments/create" style="font-size: 30px">Leave a Review!</a>
                     </div>
                     <div class="order-status">
                         <p class="message">{{ session('message') }}</p>
