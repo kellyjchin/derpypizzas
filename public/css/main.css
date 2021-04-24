@@ -149,3 +149,11 @@ a.back {
   font-size: 18px;
   font-weight: bold;
 }
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+}
