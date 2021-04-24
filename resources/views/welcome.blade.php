@@ -3,27 +3,27 @@
 @section('content')
 <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">  
     <div class="content">
-        <div class="container">
-            <div class="row">
-                <div class="col-9">
+        
+            <div class="flex-container">
+                <div class="flex-item">
                     
                     <img src="img/pizzahouse.jpg" alt="pizza house logo" srcset="">
                     
                     <div class="title m-b-md">
                         Derpy Pizzas
                     </div>
-                    <div class="order-status">
-                        <p class="message">{{ session('message') }}</p>
-                    </div>
-                    <div>
-                        <a href="/pizzas/create" style="font-size: 30px; margin-right:10px" class="btn btn-success">Order a Pizza!</a> 
+                 
+                    <p class="message">{{ session('message') }}</p>
+                   
+                    <div class="flex-container">
+                        <a href="/pizzas/create" style="font-size: 30px; margin:10px" class="btn btn-success">Order a Pizza!</a> 
                         <a href="/comments/create" style="font-size: 30px" class="btn btn-primary">Leave a Review!</a>
                     </div>
                     <br/>
-                    <p>**Register/Login to see all pending orders that customers have made!**</p>
+                    {{-- <span>*Register/Login to see all pending orders that customers have made!*</span> --}}
                 </div>
 
-                <div class="col-3 comments-section">
+                <div class="flex-item comments-section">
                     <h1>Customer Reviews</h1>
                     @foreach ( $comments as $comment)
                     <div class="comment border border-dark" style="padding: 10px 10px 10px 10px; margin-bottom: 5px">
@@ -43,7 +43,7 @@
                     @endforeach
                 </div>
             </div>
-        </div>
+        
     </div>
 </div>
 

@@ -15,7 +15,7 @@ class CommentController extends Controller
     public function index()
     {
         $allComments = Comment::latest()->limit(3)->get();
-        return view('welcomeflex', ['comments' => $allComments]);
+        return view('welcome', ['comments' => $allComments]);
     }
 
     /**
