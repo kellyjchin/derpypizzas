@@ -20,7 +20,7 @@
                         <a href="/comments/create" style="font-size: 30px" class="btn btn-primary">Leave a Review!</a>
                     </div>
                     <br/>
-                    {{-- <span>*Register/Login to see all pending orders that customers have made!*</span> --}}
+                    <span>*Register/Login to see all pending orders that customers have made!*</span>
                 </div>
 
                 <div class="flex-item comments-section">
