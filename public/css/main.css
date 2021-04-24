@@ -150,10 +150,10 @@ a.back {
   font-weight: bold;
 }
 
-.flex-container {
+/* .flex-container {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
   align-content: center;
-}
+} */

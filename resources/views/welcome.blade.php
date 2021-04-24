@@ -4,7 +4,13 @@
 <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">  
     <div class="content">
         
-            <div class="flex-container">
+            <div 
+                class="flex-container"
+                style="display: flex; justify-content: space-around;
+                flex-wrap: wrap;
+                align-items: center;
+                align-content: center;"
+            >
                 <div class="flex-item">
                     
                     <img src="img/pizzahouse.jpg" alt="pizza house logo" srcset="">
@@ -20,7 +26,7 @@
                         <a href="/comments/create" style="font-size: 30px" class="btn btn-primary">Leave a Review!</a>
                     </div>
                     <br/>
-                    <span>*Register/Login to see all pending orders that customers have made!*</span>
+                    {{-- <span>*Register/Login to see all pending orders that customers have made!*</span> --}}
                 </div>
 
                 <div class="flex-item comments-section">
