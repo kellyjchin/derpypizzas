@@ -24,7 +24,8 @@ class PizzaController extends Controller
         return view('pizzas.create');
     }
 
-    public function store() {
+    public function store(Request $request) {
+        dd($request);
         $newPizza = new Pizza();
         $newPizza->name = request('name');
         $newPizza->type = request('type');

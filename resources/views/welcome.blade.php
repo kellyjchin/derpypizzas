@@ -22,7 +22,8 @@
                     <p class="message">{{ session('message') }}</p>
                    
                     <div class="flex-container">
-                        <a href="/pizzas/create" style="font-size: 30px; margin:10px" class="btn btn-success">Order a Pizza!</a> 
+                        {{-- <a href="/pizzas/create" style="font-size: 30px; margin:10px" class="btn btn-success">Order a Pizza!</a>  --}}
+                        <a href="/orders/create" style="font-size: 30px; margin:10px" class="btn btn-success">Order Button 2.0!</a> 
                         <a href="/comments/create" style="font-size: 30px" class="btn btn-primary">Leave a Review!</a>
                     </div>
                     <br/>

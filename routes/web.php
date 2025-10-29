@@ -34,3 +34,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/', 'CommentController@index');
 Route::get('comments/create', 'CommentController@create');
 Route::post('/comments', 'CommentController@store');
+
+// Orders Resource Routes
+Route::get('/orders', 'OrderController@index')->middleware('auth');
+Route::get('/orders/create', 'OrderController@create');
+Route::post('/orders', 'OrderController@store');

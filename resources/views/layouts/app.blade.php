@@ -83,5 +83,8 @@
     <footer>
         Developer - Kelly Chin | <a href="https://kellyjchin.netlify.app/" target="__blank">My Portfolio!</a>
     </footer>
+    <script type="text/javascript" src="{{ URL::asset('js/scripts.js') }}"></script>
+    {{-- <script type="module" src="{{ URL::asset('js/scripts.js') }}"></script> --}}
+    <script src="{{ URL::asset('js/helpers.js') }}" type="text/javascript"></script>
 </body>
 </html>
